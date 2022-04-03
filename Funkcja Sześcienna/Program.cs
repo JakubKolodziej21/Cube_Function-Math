@@ -8,8 +8,22 @@ namespace Funkcja_Sześcienna
         {
             //Przyjmowanie wartości
             Console.WriteLine("Dana jest funkcja sześcienna");
+
+            //Wartośc a wyrażenia musi być różna od zera
+
+
+            sprawdzenie:
             Console.Write("Podaj a:  ");
             string A = Console.ReadLine();
+            
+            
+            while (A == "0") 
+            {
+                Console.WriteLine("Wartość argumentu A nie może być równa zero");
+                Console.WriteLine("Podaj inną wartość");
+                goto sprawdzenie;
+            }
+
 
             Console.Write("Podaj b:  ");
             string B = Console.ReadLine();
